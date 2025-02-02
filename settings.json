@@ -7,9 +7,15 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "features": {
+    "inline_completion_provider": "supermaven"
+  },
   "telemetry": {
     "diagnostics": false,
     "metrics": false
+  },
+  "project_panel": {
+    "auto_fold_dirs": false
   },
   "restore_on_startup": "last_session",
   "redact_private_values": false,

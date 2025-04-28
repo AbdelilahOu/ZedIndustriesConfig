@@ -8,13 +8,13 @@
   {
     "context": "Editor",
     "bindings": {
-      "ctrl-:": ["editor::ToggleComments", { "advance_downwards": true }],
+      "ctrl-:": ["editor::ToggleComments", { "advance_downwards": false }],
       "cmd-shift-k": "editor::DeleteLine",
-      // "alt-shift-down": "editor::DuplicateLine",
       "alt-up": "editor::MoveLineUp",
       "alt-down": "editor::MoveLineDown",
       "ctrl-shift-right": "editor::SelectLargerSyntaxNode",
       "ctrl-shift-left": "editor::SelectSmallerSyntaxNode",
+      "ctrl-;": "editor::ToggleCodeActions",
       "ctrl-tab": "tab_switcher::Toggle",
       "ctrl-shift-tab": ["tab_switcher::Toggle", { "select_last": true }],
       "alt--": ["workspace::SendKeystrokes", "|"]

@@ -9,12 +9,11 @@
     }
   },
   "assistant": {
-    "enabled": false,
+    "enabled": true,
     "version": "2"
   },
   "icon_theme": "Colored Zed Icons Theme Dark",
   "features": {
-    "inline_completion_provider": "none",
     "edit_prediction_provider": "none"
   },
   "telemetry": {
@@ -34,8 +33,8 @@
   "ui_font_features": {
     "calt": true
   },
-  "buffer_font_family": "JetBrainsMonoNL Nerd Font Mono",
-  "ui_font_family": "JetBrainsMonoNL Nerd Font Mono",
+  "buffer_font_family": "JetBrainsMonoNL Nerd Font",
+  "ui_font_family": "JetBrainsMonoNL Nerd Font",
   "cursor_blink": false,
   "vertical_scroll_margin": 6,
   "vim_mode": false,
@@ -47,37 +46,73 @@
     "light": "One Light",
     "dark": "Vesper"
   },
-  "format_on_save": "on",
+  "format_on_save": "off",
   "language_overrides": {
     "TypeScript": {
       "formatter": {
         "external": {
-          "command": "C:/Users/abdel/AppData/Roaming/Zed/biome-win32-x64.exe",
-          "arguments": ["format", "--fix", "--stdin-file-path={buffer_path}"]
+          "command": "biome",
+          "arguments": [
+            "check",
+            "--vcs-enabled=true",
+            "--organize-imports-enabled=true",
+            "--formatter-enabled=true",
+            "--linter-enabled=true",
+            "--fix",
+            "--apply-unsafe",
+            "--stdin-file-path={buffer_path}"
+          ]
         }
       }
     },
     "TSX": {
       "formatter": {
         "external": {
-          "command": "C:/Users/abdel/AppData/Roaming/Zed/biome-win32-x64.exe",
-          "arguments": ["format", "--fix", "--stdin-file-path={buffer_path}"]
+          "command": "biome",
+          "arguments": [
+            "check",
+            "--vcs-enabled=true",
+            "--organize-imports-enabled=true",
+            "--formatter-enabled=true",
+            "--linter-enabled=true",
+            "--fix",
+            "--apply-unsafe",
+            "--stdin-file-path={buffer_path}"
+          ]
         }
       }
     },
     "JavaScript": {
       "formatter": {
         "external": {
-          "command": "C:/Users/abdel/AppData/Roaming/Zed/biome-win32-x64.exe",
-          "arguments": ["format", "--fix", "--stdin-file-path={buffer_path}"]
+          "command": "biome",
+          "arguments": [
+            "check",
+            "--vcs-enabled=true",
+            "--organize-imports-enabled=true",
+            "--formatter-enabled=true",
+            "--linter-enabled=true",
+            "--fix",
+            "--apply-unsafe",
+            "--stdin-file-path={buffer_path}"
+          ]
         }
       }
     },
     "JSX": {
       "formatter": {
         "external": {
-          "command": "C:/Users/abdel/AppData/Roaming/Zed/biome-win32-x64.exe",
-          "arguments": ["format", "--fix", "--stdin-file-path={buffer_path}"]
+          "command": "biome",
+          "arguments": [
+            "check",
+            "--vcs-enabled=true",
+            "--organize-imports-enabled=true",
+            "--formatter-enabled=true",
+            "--linter-enabled=true",
+            "--fix",
+            "--apply-unsafe",
+            "--stdin-file-path={buffer_path}"
+          ]
         }
       }
     }

@@ -1,148 +1,160 @@
 {
-  "diagnostics": {
-    "inline": {
-      "enabled": true,
-      "update_debounce_ms": 150,
-      "padding": 4,
-      "min_column": 1,
-      "max_severity": "warning"
+    "diagnostics": {
+        "inline": {
+            "enabled": true,
+            "update_debounce_ms": 150,
+            "padding": 4,
+            "min_column": 1,
+            "max_severity": "warning"
+        }
+    },
+    "icon_theme": "Colored Zed Icons Theme Dark",
+    "features": {
+        "edit_prediction_provider": "none"
+    },
+    "telemetry": {
+        "diagnostics": false,
+        "metrics": false
+    },
+    "project_panel": {
+        "auto_fold_dirs": false
+    },
+    "restore_on_startup": "last_session",
+    "redact_private_values": false,
+    "use_autoclose": true,
+    "current_line_highlight": "none",
+    "indent_guides": {
+        "enabled": false
+    },
+    "ui_font_features": {
+        "calt": true
+    },
+    "buffer_font_family": "JetBrainsMonoNL Nerd Font",
+    "ui_font_family": "JetBrainsMonoNL Nerd Font",
+    "cursor_blink": false,
+    "vertical_scroll_margin": 6,
+    "vim_mode": false,
+    "ui_font_size": 14,
+    "buffer_font_size": 15,
+    "show_completions_on_input": true,
+    "theme": {
+        "mode": "system",
+        "light": "One Light",
+        "dark": "Vesper"
+    },
+    "format_on_save": "true",
+    "code_actions_on_format": {
+        "source.fixAll.biome": true,
+        "source.organizeImports.biome": true
+    },
+    "formatter": {
+        "language_server": {
+            "name": "biome"
+        }
+    },
+    "lsp": {
+        "biome": {
+            "settings": {
+                "config_path": ""
+            }
+        }
+    },
+    // "language_overrides": {
+    //     "TypeScript": {
+    //         "formatter": {
+    //             "external": {
+    //                 "command": "biome",
+    //                 "arguments": [
+    //                     "check",
+    //                     "--formatter-enabled=true",
+    //                     "--linter-enabled=false",
+    //                     "--vcs-enabled=true",
+    //                     "--organize-imports-enabled=true",
+    //                     "--indent-style=space",
+    //                     "--write",
+    //                     "{buffer_path}"
+    //                 ]
+    //             }
+    //         }
+    //     },
+    //     "TSX": {
+    //         "formatter": {
+    //             "external": {
+    //                 "command": "biome",
+    //                 "arguments": [
+    //                     "check",
+    //                     "--formatter-enabled=true",
+    //                     "--linter-enabled=false",
+    //                     "--vcs-enabled=true",
+    //                     "--organize-imports-enabled=true",
+    //                     "--indent-style=space",
+    //                     "--write",
+    //                     "{buffer_path}"
+    //                 ]
+    //             }
+    //         }
+    //     },
+    //     "JavaScript": {
+    //         "formatter": {
+    //             "external": {
+    //                 "command": "biome",
+    //                 "arguments": [
+    //                     "check",
+    //                     "--formatter-enabled=true",
+    //                     "--linter-enabled=false",
+    //                     "--vcs-enabled=true",
+    //                     "--organize-imports-enabled=true",
+    //                     "--indent-style=space",
+    //                     "--write",
+    //                     "{buffer_path}"
+    //                 ]
+    //             }
+    //         }
+    //     },
+    //     "JSX": {
+    //         "formatter": {
+    //             "external": {
+    //                 "command": "biome",
+    //                 "arguments": [
+    //                     "check",
+    //                     "--formatter-enabled=true",
+    //                     "--linter-enabled=false",
+    //                     "--vcs-enabled=true",
+    //                     "--organize-imports-enabled=true",
+    //                     "--indent-style=space",
+    //                     "--write",
+    //                     "{buffer_path}"
+    //                 ]
+    //             }
+    //         }
+    //     }
+    // },
+    "terminal": {
+        "shell": {
+            "program": "cmd.exe"
+        },
+        "alternate_scroll": "off",
+        "blinking": "terminal_controlled",
+        "copy_on_select": false,
+        "dock": "bottom",
+        "detect_venv": {
+            "on": {
+                "directories": [".env", "env", ".venv", "venv"],
+                "activate_script": "default"
+            }
+        },
+        "env": {},
+        "font_features": null,
+        "font_size": 13,
+        "line_height": "comfortable",
+        "option_as_meta": false,
+        "button": true,
+        "toolbar": {
+            "breadcrumbs": false
+        },
+        "working_directory": "current_project_directory",
+        "scrollbar": {
+            "show": null
+        }
     }
-  },
-  "assistant": {
-    "enabled": true,
-    "version": "2"
-  },
-  "icon_theme": "Colored Zed Icons Theme Dark",
-  "features": {
-    "edit_prediction_provider": "none"
-  },
-  "telemetry": {
-    "diagnostics": false,
-    "metrics": false
-  },
-  "project_panel": {
-    "auto_fold_dirs": false
-  },
-  "restore_on_startup": "last_session",
-  "redact_private_values": false,
-  "use_autoclose": true,
-  "current_line_highlight": "none",
-  "indent_guides": {
-    "enabled": false
-  },
-  "ui_font_features": {
-    "calt": true
-  },
-  "buffer_font_family": "JetBrainsMonoNL Nerd Font",
-  "ui_font_family": "JetBrainsMonoNL Nerd Font",
-  "cursor_blink": false,
-  "vertical_scroll_margin": 6,
-  "vim_mode": false,
-  "ui_font_size": 14,
-  "buffer_font_size": 15,
-  "show_completions_on_input": true,
-  "theme": {
-    "mode": "system",
-    "light": "One Light",
-    "dark": "Vesper"
-  },
-  "format_on_save": "off",
-  "language_overrides": {
-    "TypeScript": {
-      "formatter": {
-        "external": {
-          "command": "biome",
-          "arguments": [
-            "check",
-            "--vcs-enabled=true",
-            "--organize-imports-enabled=true",
-            "--formatter-enabled=true",
-            "--linter-enabled=true",
-            "--fix",
-            "--apply-unsafe",
-            "--stdin-file-path={buffer_path}"
-          ]
-        }
-      }
-    },
-    "TSX": {
-      "formatter": {
-        "external": {
-          "command": "biome",
-          "arguments": [
-            "check",
-            "--vcs-enabled=true",
-            "--organize-imports-enabled=true",
-            "--formatter-enabled=true",
-            "--linter-enabled=true",
-            "--fix",
-            "--apply-unsafe",
-            "--stdin-file-path={buffer_path}"
-          ]
-        }
-      }
-    },
-    "JavaScript": {
-      "formatter": {
-        "external": {
-          "command": "biome",
-          "arguments": [
-            "check",
-            "--vcs-enabled=true",
-            "--organize-imports-enabled=true",
-            "--formatter-enabled=true",
-            "--linter-enabled=true",
-            "--fix",
-            "--apply-unsafe",
-            "--stdin-file-path={buffer_path}"
-          ]
-        }
-      }
-    },
-    "JSX": {
-      "formatter": {
-        "external": {
-          "command": "biome",
-          "arguments": [
-            "check",
-            "--vcs-enabled=true",
-            "--organize-imports-enabled=true",
-            "--formatter-enabled=true",
-            "--linter-enabled=true",
-            "--fix",
-            "--apply-unsafe",
-            "--stdin-file-path={buffer_path}"
-          ]
-        }
-      }
-    }
-  },
-  "terminal": {
-    "shell": {
-      "program": "cmd.exe"
-    },
-    "alternate_scroll": "off",
-    "blinking": "terminal_controlled",
-    "copy_on_select": false,
-    "dock": "bottom",
-    "detect_venv": {
-      "on": {
-        "directories": [".env", "env", ".venv", "venv"],
-        "activate_script": "default"
-      }
-    },
-    "env": {},
-    "font_features": null,
-    "font_size": 13,
-    "line_height": "comfortable",
-    "option_as_meta": false,
-    "button": true,
-    "toolbar": {
-      "breadcrumbs": false
-    },
-    "working_directory": "current_project_directory",
-    "scrollbar": {
-      "show": null
-    }
-  }
 }

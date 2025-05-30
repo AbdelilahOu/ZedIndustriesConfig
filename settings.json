@@ -47,88 +47,83 @@
         "source.fixAll.biome": true,
         "source.organizeImports.biome": true
     },
-    "formatter": {
-        "language_server": {
-            "name": "biome"
-        }
-    },
     "lsp": {
         "biome": {
             "settings": {
-                "config_path": ""
+                "config_path": "%LOCALAPPDATA%/Zed/biome.json"
             }
         }
     },
-    // "language_overrides": {
-    //     "TypeScript": {
-    //         "formatter": {
-    //             "external": {
-    //                 "command": "biome",
-    //                 "arguments": [
-    //                     "check",
-    //                     "--formatter-enabled=true",
-    //                     "--linter-enabled=false",
-    //                     "--vcs-enabled=true",
-    //                     "--organize-imports-enabled=true",
-    //                     "--indent-style=space",
-    //                     "--write",
-    //                     "{buffer_path}"
-    //                 ]
-    //             }
-    //         }
-    //     },
-    //     "TSX": {
-    //         "formatter": {
-    //             "external": {
-    //                 "command": "biome",
-    //                 "arguments": [
-    //                     "check",
-    //                     "--formatter-enabled=true",
-    //                     "--linter-enabled=false",
-    //                     "--vcs-enabled=true",
-    //                     "--organize-imports-enabled=true",
-    //                     "--indent-style=space",
-    //                     "--write",
-    //                     "{buffer_path}"
-    //                 ]
-    //             }
-    //         }
-    //     },
-    //     "JavaScript": {
-    //         "formatter": {
-    //             "external": {
-    //                 "command": "biome",
-    //                 "arguments": [
-    //                     "check",
-    //                     "--formatter-enabled=true",
-    //                     "--linter-enabled=false",
-    //                     "--vcs-enabled=true",
-    //                     "--organize-imports-enabled=true",
-    //                     "--indent-style=space",
-    //                     "--write",
-    //                     "{buffer_path}"
-    //                 ]
-    //             }
-    //         }
-    //     },
-    //     "JSX": {
-    //         "formatter": {
-    //             "external": {
-    //                 "command": "biome",
-    //                 "arguments": [
-    //                     "check",
-    //                     "--formatter-enabled=true",
-    //                     "--linter-enabled=false",
-    //                     "--vcs-enabled=true",
-    //                     "--organize-imports-enabled=true",
-    //                     "--indent-style=space",
-    //                     "--write",
-    //                     "{buffer_path}"
-    //                 ]
-    //             }
-    //         }
-    //     }
-    // },
+    "language_overrides": {
+        "TypeScript": {
+            "formatter": {
+                "external": {
+                    "command": "biome",
+                    "arguments": [
+                        "check",
+                        "--formatter-enabled=true",
+                        "--linter-enabled=false",
+                        "--vcs-enabled=true",
+                        "--organize-imports-enabled=true",
+                        "--indent-style=space",
+                        "--write",
+                        "{buffer_path}"
+                    ]
+                }
+            }
+        },
+        "TSX": {
+            "formatter": {
+                "external": {
+                    "command": "biome",
+                    "arguments": [
+                        "check",
+                        "--formatter-enabled=true",
+                        "--linter-enabled=false",
+                        "--vcs-enabled=true",
+                        "--organize-imports-enabled=true",
+                        "--indent-style=space",
+                        "--write",
+                        "{buffer_path}"
+                    ]
+                }
+            }
+        },
+        "JavaScript": {
+            "formatter": {
+                "external": {
+                    "command": "biome",
+                    "arguments": [
+                        "check",
+                        "--formatter-enabled=true",
+                        "--linter-enabled=false",
+                        "--vcs-enabled=true",
+                        "--organize-imports-enabled=true",
+                        "--indent-style=space",
+                        "--write",
+                        "{buffer_path}"
+                    ]
+                }
+            }
+        },
+        "JSX": {
+            "formatter": {
+                "external": {
+                    "command": "biome",
+                    "arguments": [
+                        "check",
+                        "--formatter-enabled=true",
+                        "--linter-enabled=false",
+                        "--vcs-enabled=true",
+                        "--organize-imports-enabled=true",
+                        "--indent-style=space",
+                        "--write",
+                        "{buffer_path}"
+                    ]
+                }
+            }
+        }
+    },
     "terminal": {
         "shell": {
             "program": "cmd.exe"
